@@ -1,0 +1,8 @@
+#not-found-component p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#not-found-component img{
+    margin-top: 10%;
+}

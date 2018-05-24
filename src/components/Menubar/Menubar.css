@@ -1,0 +1,30 @@
+#menubar ul{
+    display: flex;
+    flex-direction: row;
+
+    margin: 0;
+    padding: 0;
+}
+#menubar ul > li {
+    list-style-type: none;
+    flex-grow: 1;
+    text-align: center;
+    background: #f6f6f6;
+    border-right: 2px solid #6a6a6a;
+    cursor: pointer;
+}
+
+#menubar ul > li > a{
+    color: #222222;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 8px 0px;
+}
+
+#menubar ul > li > a.active{
+    background: #FF4940;
+    color: #ffffff;
+    font-weight: bold;
+}
+
