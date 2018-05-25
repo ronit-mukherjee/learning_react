@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, NavLink, Route, Switch} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 
 import './Menubar.css';
 
@@ -24,6 +24,11 @@ const Menubar = () => {
             id: 4,
             name: "Contact",
             url: "/contact"
+        },
+        {
+            id: 5,
+            name: "Our team",
+            url: "/our-team"
         }
     ]
 
@@ -33,9 +38,9 @@ const Menubar = () => {
                 {
                     menus.map((menu, index) => {
                         return (
-                            <li>
-                                <NavLink exact="true" to={(menu.url).toLowerCase()} activeClassName="active"
-                                         key={index}>{menu.name}</NavLink>
+                            <li key={index}>
+                                <NavLink exact to={(menu.url).toLowerCase()} activeClassName="active"
+                                         >{menu.name}</NavLink>
                             </li>
                         )
                     })

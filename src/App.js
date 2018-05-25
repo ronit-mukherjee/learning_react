@@ -6,16 +6,23 @@ import Menubar from "./components/Menubar/Menubar"
 import AppRoutes from './AppRoutes'
 
 class App extends Component {
+    state = {
+        team_members :[
+            {
+                id:1,
+            }
+        ]
+    }
     render() {
         return (
             <Router>
                 <div className="App">
 
                     <header className="App-header">
-                        <h1 className="App-title">Learning React Js</h1>
+                        <h1 className="App-title">Learning ReactJs</h1>
                     </header>
                     <Menubar/>
-                    <AppRoutes/>
+                    <AppRoutes />
                 </div>
             </Router>
         );
