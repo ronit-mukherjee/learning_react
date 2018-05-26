@@ -17,8 +17,8 @@
 }
 
 #our-team .team-member .member-image img{
-    max-height: 220px;
     border-radius: 10px;
+    max-width: 100%;
 }
 
 #our-team .team-member .member-name{
